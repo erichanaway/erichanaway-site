@@ -16,14 +16,45 @@ body {
 /* HERO */
 
 .hero {
+    position: relative;
     min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
     background-image: linear-gradient(
         rgba(0,0,0,0.45),
         rgba(0,0,0,0.45)
     ), url('./assets/hero6.png');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    animation: heroZoom 12s ease-out forwards;
+
+    transform: scale(1);
+    z-index: 0;
+}
+
+@keyframes heroZoom {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.08);
+    }
+}
+
+.navbar,
+.hero-content {
+    position: relative;
+    z-index: 1;
 }
 
 .navbar {
@@ -65,9 +96,7 @@ body {
 /* HOME LAYOUT */
 
 .home-layout {
-
     background: #f5f6f8;
-
     color: #1f1f1f;
     padding: 100px 70px;
 }
@@ -108,13 +137,19 @@ body {
     border-radius: 8px;
     text-decoration: none;
     color: white;
+
     transform: translateY(0);
-    transition: transform 0.5s ease, box-shadow 0.5s ease;
+
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.25);
 }
 
 .project-card img {
@@ -122,7 +157,9 @@ body {
     height: 100%;
     object-fit: cover;
     display: block;
+
     transform: scale(1.12);
+
     transition: transform 1.2s ease;
 }
 
@@ -133,7 +170,9 @@ body {
 .project-overlay {
     position: absolute;
     inset: 0;
+
     background: rgba(0,0,0,0.25);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,6 +180,7 @@ body {
 
     text-align: center;
     padding: 30px;
+
     transition: background 0.5s ease;
 }
 
@@ -210,6 +250,7 @@ body {
     border-radius: 6px;
     text-decoration: none;
     font-weight: bold;
+
     transition: 0.3s ease;
 }
 
