@@ -303,3 +303,94 @@ body {
     gap: 20px;
     flex-wrap: wrap;
 }
+
+/* PROJECT SECTIONS */
+
+.project-section {
+    max-width: 1100px;
+    margin: 0 auto 100px auto;
+}
+
+.project-section h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+    color: #1f1f1f;
+}
+
+.project-section p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444;
+    max-width: 900px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1f1f1f;
+    box-shadow: 
+        0 15px 40px rgba(0, 0, 0, 0.08);
+    transition: 
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 
+        0 25px 50px rgba(0,0,0,0.12);
+}
+
+/* SCREENSHOT CARD */
+
+
+.screenshot-grid {
+    display: grid;
+    gap: 60px;
+}
+
+.screenshot-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+
+    box-shadow:
+        0 18px 45px rgba(0,0,0,0.10);
+    
+     transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.screenshot-card img {
+    width: 100%;
+    display: block;
+}
+
+.screenshot-card h3 {
+    font-size: 28px;
+    padding: 28px 32px 8px 32px;
+    color: #1f1f1f;
+}
+
+.screenshot-card p {
+    padding: 0 32px 32px 32px;
+    font-size: 18px;
+    color: #444;
+}
+
+.screenshot-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 25px 60px rgba(0,0,0,0.15);
+}
