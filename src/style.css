@@ -483,3 +483,35 @@ body {
     box-shadow:
         0 25px 60px rgba(0,0,0,0.15);
 }
+
+/* SOCIAL LINKS */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.social-links a {
+    color: #1f1f1f;
+    font-size: 3rem;
+
+    transition:
+        color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #0bb4aa;
+    transform: translateY(-6px);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 60px 0 30px 0;
+    color: #64748b;
+    font-size: 0.95rem;
+}
