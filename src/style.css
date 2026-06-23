@@ -538,3 +538,9 @@ footer {
 .projects-grid .project-overlay p {
     font-size: 18px;
 }
+
+.job-company {
+    font-weight: bold;
+    color: #475569;
+    margin-bottom: px;
+}
