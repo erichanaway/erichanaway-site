@@ -542,5 +542,10 @@ footer {
 .job-company {
     font-weight: bold;
     color: #475569;
-    margin-bottom: px;
+    margin-bottom: 25px;
+}
+
+.feature-card {
+    text-decoration: none;
+    color: #1f1f1f;
 }
