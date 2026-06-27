@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HMIS Data Quality Manager</title>
+</head>
+
+<body>
+    <nav class="navbar project-navbar">
+         <div class="logo">Eric Hanaway</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="resume.html">Resume</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main class="project-page">
+        <section class="project-hero">
+            <p class="project-tags">Data Quality • HMIS Reporting • JavaScript</p>
+
+            <h1>Data Quality Manager</h1>
+
+            <p class="project-intro">
+                A browser-based application that analyzes HMIS data exports, identifies data quality issues, and helps agencies improve reporting through an expanding library of automated validation rules.
+            </p>
+
+            <div class="project-buttons">
+                <a href="https://hmis-data-quality-app.vercel.app/"
+                    target="_blank"
+                    class="resume-btn">
+                        View Live Manager
+                </a>
+
+                <a href="https://github.com/erichanaway/hmis-data-quality-app"
+                    target="_blank"
+                    class="resume-btn">
+                        View GitHub
+                </a>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Project Overview</h2>
+            <p>
+                The Data Quality Manager is a browser-based tool designed to help HMIS administrators
+                and agencies identify data quality issues before submitting reports. Users upload an
+                Excel workbook exported from HMIS, and the manager evaluates each record against a
+                growing library of validation rules.
+            </p>
+
+            <p>
+                Instead of manually reviewing rows one by one, the manager quickly identifies missing
+                information, invalid project data, incomplete client records, and other common issues.
+                Its goal is to reduce reporting errors, improve data quality, and save staff review time.
+            </p>
+
+        </section>
+
+        <section class="project-section">
+            <h2>Key Features</h2>
+
+            <div class="feature-grid">
+                <div class="feature-card">Upload and analyze HMIS Excel workbooks</div>
+
+                <div class="feature-card">Automated rule-based validation engine</div>
+
+                <div class="feature-card">Data quality dashboard with KPI summary cards</div>
+
+                <div class="feature-card">Detailed flag report with severity, description, and recommended resolution</div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Technologies Used</h2>
+            <p>
+                HTML, CSS, JavaScript (ES6), Vite, SheetJS (XLSX), Git, GitHub, and Vercel.
+            </p>
+
+        </section>
+
+        <section class="project-section">
+            <h2>Challenges and Solutions</h2>
+
+            <p>
+                One of the main challenges was designing a validation system that could grow over time.
+                Instead of writing all data quality checks directly inside the dashboard code, I created
+                a separate rule library where each rule contains its own ID, category, severity,
+                message, resolution, and validation logic.
+            </p>
+
+            <p>
+                This structure allows the Data Quality Manager to expand from a few basic checks to
+                hundreds of validation rules without rewriting the main application. The result is a
+                more scalable and maintainable system for reviewing HMIS data.
+            </p>
+
+        </section>
+
+        <section class="project-section">
+            <h2>Application Screenshots</h2>
+
+            <div class="screenshot-grid">
+
+                <div class="screenshot-card">
+                    <img src="/src/assets/dq-overview.png"
+                         alt="Data Quality Manager">
+                    <h3>Dashboard Overview</h3>
+
+                    <p>
+                        The Data Quality Manager provides Excel upload, automated validation,
+                        KPI summaries, and a detailed report of data quality issues.                    
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+      © 2026 Eric Hanaway • Built with HTML, CSS, and JavaScript
+    </footer>
+
+<script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
