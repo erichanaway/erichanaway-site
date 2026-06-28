@@ -10,6 +10,7 @@ export default defineConfig({
         project1: resolve(__dirname, 'project1.html'),
         project2: resolve(__dirname, 'project2.html'),
         resume: resolve(__dirname, 'resume.html'),
+        resume2: resolve(__dirname, 'resume2.html'),
         contact: resolve(__dirname, 'contact.html'),
 
       },
